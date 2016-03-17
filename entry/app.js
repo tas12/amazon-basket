@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Basket from './basket-components/';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Basket from './basket-components/'
 
-const container = document.getElementById('container');
+const container = document.getElementById('container')
 
 
 const shoppingBasket = {
@@ -24,4 +24,4 @@ const shoppingBasket = {
 }
 
 
-ReactDOM.render(<Basket shoppingBasket={shoppingBasket} />, container);
+ReactDOM.render(<Basket shoppingBasket={shoppingBasket} />, container)

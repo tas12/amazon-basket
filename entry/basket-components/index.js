@@ -1,13 +1,10 @@
-import React from 'react';
-import ItemName from './item-container/ItemName.js';
-import BasketImgItem from './item-container/Image.js';
-import ItemContainer from './item-container/';
+import React from 'react'
 
-
+import ItemContainer from './item-container/'
 
 class Basket extends React.Component {
 
-  render(){
+  render () {
     return (
       <table>
         <tbody>
@@ -23,11 +20,13 @@ class Basket extends React.Component {
           })}
         </tbody>
       </table>
-    );
+    )
   }
 
 }
 
+Basket.propTypes = {
+  shoppingBasket: React.PropTypes.obj.isRequired
+}
 
-
-export default Basket;
+export default Basket
