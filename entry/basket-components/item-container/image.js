@@ -1,9 +1,17 @@
 import React from 'react';
 
-const BasketImgItem = (props) => <img src={props.itemImgURL}>
-
-BasketImgItem.propTypes = {
-  itemImgURL: React.PropTypes.string.isRequired
+const style = {
+  width: '50px',
+  height: '50px'
 };
+
+class BasketImgItem extends React.Component {
+  render () {
+    return (
+      <img style={style} src={this.props.itemImgURL}/>
+    )
+  }
+}
+
 
 export default BasketImgItem;
