@@ -8,10 +8,17 @@ const style = {
 class BasketImgItem extends React.Component {
   render () {
     return (
-      <img style={style} src={this.props.itemImgURL}/>
+      <a href={this.props.url}><img style={style} src={this.props.imgURL} /></a>
     )
   }
 }
+
+BasketImgItem.propTypes = {
+  imgURL: React.PropTypes.string.isRequired,
+  url: React.PropTypes.string.isRequired
+};
+
+
 
 
 export default BasketImgItem;
